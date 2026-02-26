@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    background: #EE6983;
+    background: linear-gradient(37deg, rgba(238, 105, 131, 1) 0%, rgba(255, 196, 196, 1) 50%, rgba(255, 245, 228, 1) 100%);
+}
+
+.like-container {
+    background-color: #9c1340c6;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #7c0115e7;
+    border:none;
+    position: relative;
+}
+
+h1 {
+    color: #FFC4C4;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+.like-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre el botón y el contador */
+    margin-bottom: 30px;
+}
+
+/* Estilos para el botón de "Me Gusta" (corazón o imagen) */
+.like-button {
+    font-size: 3.5em; /* Tamaño grande para el icono */
+    color: #c90018; /* Color rojo de corazón */
+    cursor: pointer;
+    transition: transform 0.2s ease-out, color 0.2s ease-out; /* Efectos suaves */
+}
+
+.like-button:hover {
+    transform: scale(1.15); /* Se agranda un poco al pasar el ratón */
+    color: #a92516; /* Se oscurece un poco al pasar el mouse */
+}
+
+.like-button:active {
+    transform: scale(0.95); /* Se encoge un poco al hacer clic */
+}
+
+/* Estilos para el contador de "Me Gusta" */
+.like-count {
+    font-size: 4em; /* Tamaño grande del número */
+    font-weight: bold;
+    color: #FFC4C4; /* Verde para el número */
+    transition: transform 0.1s ease-out, color 0.1s ease-out; /* Para el efecto "pop" */
+}
+
+/* Clase para el efecto "pop" al incrementar el contador */
+.like-count.pop {
+    transform: scale(1.2); /* Se agranda al hacer clic */
+    color: #FFC4C4; /* Se hace un verde más oscuro */
+}
+
+p {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+button{
+    border-radius: 10px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+    margin: 2px;
+}
+
+button:hover{
+    transform: scale(1.15);
+}
+
+#restar{
+    background-color: #F8C1CC;
+    color: #8E2F4F; 
+}
+
+#borrar{
+    background-color: transparent;
+    border: 2px solid #F8C1CC;
+    color: #F8C1CC;
+}
+
+.mini-heart {
+    position: absolute;
+    font-size: 18px;
+    pointer-events: none;
+    animation: explode 0.8s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x), var(--y)) scale(1.2);
+        opacity: 0;
+    }
+}
