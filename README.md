@@ -27,6 +27,7 @@ Cada clic en el botón:
 - Carga automática del valor guardado al iniciar la página.
 
 🚀 Cómo usar el proyecto
+
 1- Clonar o descargar el repositorio.
 2- Abrir el archivo index.html en el navegador.
 3- Hacer clic en el corazón para aumentar el contador.
