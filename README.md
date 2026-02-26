@@ -1,9 +1,11 @@
 📌 Contador de "Me Gusta"
+
 Proyecto realizado en el curso de "programador web inicial - frontend developer" que consiste en una página web interactiva con un botón de "Me Gusta" y un contador dinámico.
 
 Cada vez que el usuario hace clic en el corazón, el contador aumenta y el valor se guarda automáticamente en el navegador utilizando localStorage, permitiendo que el número se mantenga incluso si se recarga la página.
 
 🎯 Objetivo General
+
 Crear una página web con un botón de "Me Gusta" y un contador numérico.
 Cada clic en el botón:
 - Incrementa el contador.
@@ -12,9 +14,9 @@ Cada clic en el botón:
 - Permite cargar automáticamente el valor guardado al volver a ingresar a la página.
 
 🛠 Tecnologías utilizadas
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ⚙️ Funcionalidades
 - Incremento del contador al hacer clic en el corazón.
